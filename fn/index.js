@@ -41,16 +41,18 @@ const htmlContent = `
                 <div id="translateBox" class="col-sm-12 mb-2 alert alert-primary">
                   Translate to:
                   <select id="target_lang" class="custom-select">
-                    <option value="en">🇬🇧</option>
-                    <option value="fr">🇫🇷</option>
-                    <option value="de">🇩🇪</option>
-                    <option value="it">🇮🇹</option>
-                    <option value="pt">🇵🇹</option>
-                    <option value="es">🇪🇸</option>
-                    <option value="ru">🇷🇺</option>
-                    <option value="he">🇮🇱</option>
-                    <option value="zh">🇨🇳</option>
-                    <option value="ja">🇯🇵</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Portuguesa</option>
+                    <option value="es">Español</option>
+                    <option value="es">Nederlandse</option>
+                    <option value="ru">Pусский</option>
+                    <option value="he">עברית</option>
+                    <option value="ar">العربية</option>
+                    <option value="zh">中国人</option>
+                    <option value="ja">日本語</option>
                   </select>
                 </div>
             </div>

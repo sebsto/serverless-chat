@@ -13,6 +13,8 @@ Resources:
       Code: ../fn
       Runtime: nodejs6.10
       Role: !GetAtt ChatFunctionRole.Arn
+      Layers:
+        - arn:aws:lambda:eu-west-1:114300393969:layer:lumigo-nodejs-tracer_eu-west-1:1
       Environment:
         Variables:
           AWS_IOT_ENDPOINT: !Ref AwsIoTEndpoint
