@@ -3,6 +3,8 @@ const AWS_IDENTITY_POOL_ID = '<AWS_IDENTITY_POOL_ID>';
 const AWS_IOT_ENDPOINT = '<AWS_IOT_ENDPOINT>';
 const APP_NAME = 'chat';
 
+console.log(AWS_IOT_ENDPOINT);
+
 var store = {}; // To be used for "global" variables
 
 /**

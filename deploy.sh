@@ -38,7 +38,7 @@ aws cloudformation deploy \
 echo Fetching identity pool id
 AWS_IDENTITY_POOL_ID=`aws cloudformation describe-stacks --region ${AWS_REGION} --stack-name ${STACK_NAME} | grep -A 1 '"OutputKey": "IdentityPoolId"' | perl -lne 'print $1 if /"OutputValue": "([^"]+)"/'`
 
-echo Patching AWS settings into index.js
+echo Patching AWS settings into index.js with AWS_IOT_ENDPOINT ${AWS_IOT_ENDPOINT}
 sed -e "s/<AWS_REGION>/${AWS_REGION}/g" \
     -e "s/<AWS_IDENTITY_POOL_ID>/${AWS_IDENTITY_POOL_ID}/g" \
     -e "s/<AWS_IOT_ENDPOINT>/${AWS_IOT_ENDPOINT}/g" \
